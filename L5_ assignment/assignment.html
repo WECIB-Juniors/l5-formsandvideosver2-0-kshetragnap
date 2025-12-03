@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L5 Assignment</title>
+    <title>Document</title>
+    <link href="./styles.css" rel="stylesheet">
 </head>
 <body>
-    
+<!--Header and description-->
+    <h1>Welcome to Cookie Monster</h1>
+    <p>Hey guys!</p>
+    <!--First form which asks for name, email, password, favorite cookie, comments, and checkboix to subscribe with submit button.-->
+    <form target="_blank" class="long-form" method="get">
+        <label for="fullname">Full Name: </label>
+        <br>
+        <input type="text" name="fullname" id="fullname" required><br>
+        <label for="email">Email address:</label> 
+        <br> 
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Password:</label>
+        <br>
+        <input type="password" id="password" name="password" required minlength="8" maxlength="16"><br>
+        <label for="cookies">What cookies do you want?</label>
+        <select name="cookies">
+                <option value="cookies and cream">cookies and cream</option>
+                <option value="dubai chocolate">dubai chocolate</option>
+                <option value="choclate chip">choclate chip</option>
+        </select><br><br>
+        <label for="comments">Comments:</label>
+        <textarea name="comments"></textarea><br>
+        <label for="subscribe">Subscribe?</label>
+        <input type="checkbox" name="subscribe">
+        <input type="submit">
+    </form>
+    <!--second form which asks for favorite flavor-->
+    <br>
+    <form target="_blank" class="long-form" method="get">
+        <h2>Choose your fav!!!</h2>
+        <input type="radio" id="sweet" name="fav_flavor" value="sweet">
+        <label for="sweet">sweet</label><br>
+        <input type="radio" id="sour" name="fav_flavor" value="sour">
+        <label for="sour">sour</label><br>
+        <input type="radio" id="bitter" name="fav_flavor" value="bitter">
+        <label for="bitter">bitter</label>
+        <br><br><input type="sbmit">
+    </form>u
+<!--video of cookie-->
+    <video autoplay controls width="720" height="480" alt="cookie being dipped in milk">
+    <source src="./cookie.mp4" type="video/mp4" />
+    </video>
+
 </body>
 </html>
